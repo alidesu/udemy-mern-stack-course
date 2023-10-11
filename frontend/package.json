@@ -1,8 +1,10 @@
 {
   "name": "udemy-mern-stack-course",
   "private": true,
+  "proxy": "http://localhost:5000",
   "version": "0.0.0",
   "type": "module",
+ 
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -10,6 +12,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "axios": "^1.5.1",
     "bootstrap": "^5.3.2",
     "react": "^18.2.0",
     "react-bootstrap": "^2.9.0",

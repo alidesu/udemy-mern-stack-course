@@ -1,4 +1,5 @@
 import { FaStar, FaStarHalfAlt, FaRegStar } from "react-icons/fa";
+import PropTypes from 'prop-types';
 
 const Rating = ({ value, text }) => {
   return (
@@ -51,6 +52,12 @@ const Rating = ({ value, text }) => {
       <span className="rating-text">{text && text}</span>
     </div>
   );
+};
+
+
+Rating.propTypes = {
+    value: PropTypes.number.isRequired,
+    text: PropTypes.string.isRequired,
 };
 
 export default Rating;
